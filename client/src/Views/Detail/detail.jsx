@@ -44,30 +44,31 @@ const Detail = () => {
         </div>
         <div className={style.info}>
           <img className={style.characterImage} src={country.flag} />
+          <div className={style.infoText}>
+            <h2 className={style.nameText}>
+              <span>▻ Name: </span> {country.name}
+            </h2>
 
-          <h2 className={style.nameText}>
-            <span>▻ Name: </span> {country.name}
-          </h2>
+            <h2 className={style.marginH2}>
+              <span>‣ Continent: </span> {country.continent}
+            </h2>
 
-          <h2 className={style.marginH2}>
-            <span>‣ Continent: </span> {country.continent}
-          </h2>
+            <h2 className={style.marginH2}>
+              <span>‣ Capital: </span> {country.capital}
+            </h2>
 
-          <h2 className={style.marginH2}>
-            <span>‣ Capital: </span> {country.capital}
-          </h2>
+            <h2 className={style.marginH2}>
+              <span>‣ Subregion: </span> {country.subregion}
+            </h2>
 
-          <h2 className={style.marginH2}>
-            <span>‣ Subregion: </span> {country.subregion}
-          </h2>
+            <h2 className={style.marginH2}>
+              <span>‣ Area: </span> {country.area}
+            </h2>
 
-          <h2 className={style.marginH2}>
-            <span>‣ Area: </span> {country.area}
-          </h2>
-
-          <h2 className={style.marginH2}>
-            <span>‣ Population: </span> {country.population}
-          </h2>
+            <h2 className={style.marginH2}>
+              <span>‣ Population: </span> {country.population}
+            </h2>
+          </div>
         </div>
       </div>
     </div>

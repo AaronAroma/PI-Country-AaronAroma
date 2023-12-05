@@ -1,3 +1,5 @@
+/* landingPage.module.css */
+
 .Landing {
   position: relative;
   height: 100vh;
@@ -18,32 +20,45 @@
 }
 
 .button {
-  padding: 12px 50px;
-  font-size: 1.5em;
-  background-color: #303d46;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  width: 10.9375rem;
+  height: 3.75rem;
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #333;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
 .button:hover {
-  background-color: #a2aaaf;
+  background-color: #949494;
+  box-shadow: 0 0 20px #ffffff50;
+  transform: scale(1.1);
+}
+
+.button:active {
+  background-color: #d2d6da;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
 }
 
 .fondo {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.imgfondo {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.fondo img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  filter: brightness(50%);
 }

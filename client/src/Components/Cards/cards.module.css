@@ -1,7 +1,6 @@
 .CardsList {
-  margin-top: 15px;
+  margin: 20px auto;
   justify-self: center;
-  width: 85vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1.25rem;
