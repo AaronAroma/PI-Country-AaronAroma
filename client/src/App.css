@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Teko", sans-serif;
+  font-size: 1.5rem;
+  background-image: url(./assets/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #333;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: #c7c7c7;
+  cursor: pointer;
+  font-family: "Teko", sans-serif;
+  font-size: large;
+}

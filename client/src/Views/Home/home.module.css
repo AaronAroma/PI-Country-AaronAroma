@@ -1,0 +1,114 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper input {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: #fff;
+  background-color: rgb(28, 28, 30);
+  box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.5), 0 0 0 0.15vw transparent;
+  border-radius: 0.4vw;
+  border: none;
+  outline: none;
+  padding: 0.4vw;
+  max-width: 190px;
+  transition: 0.4s;
+}
+
+.wrapper input:hover {
+  box-shadow: 0 0 0 0.15vw rgba(135, 207, 235, 0.186);
+}
+
+.wrapper input:focus {
+  box-shadow: 0 0 0 0.15vw rgb(199, 199, 199);
+}
+
+.Filterswrapper {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #495057;
+}
+
+.Filters {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.625rem;
+}
+
+.Filters select {
+  text-align: center;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 5px 10px;
+  border: solid 2px;
+  border-color: #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchBarWrapper {
+  margin-left: 12.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sort {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.625rem;
+}
+
+.sort select {
+  text-align: center;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 5px 10px;
+  border: solid 2px;
+  border-color: #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Filterswrapper button {
+  
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 15px;
+  border: solid 2px;
+  border-color: #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Filterswrapper button:hover {
+  transform: scale(1.05);
+  background: #c7c7c7;
+  color: #333;
+}
+
+.Filterswrapper p {
+  font-weight: 500;
+}

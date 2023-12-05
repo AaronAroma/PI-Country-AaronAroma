@@ -1,0 +1,38 @@
+.CardsList {
+  margin-top: 15px;
+  justify-self: center;
+  width: 85vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1.25rem;
+}
+
+.Pagination {
+  display: flex;
+  column-gap: 0.625rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pagination button {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 12px 15px;
+  border: solid 2px;
+  border-color: #dee2e6;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Pagination button:hover {
+  transform: scale(1.05);
+  background-color: #ADB5BD;
+  color: #333;
+}
+
+.currentPage {
+  font-weight: 550;
+  color: #ffffff;
+  font-size: 27px;
+}

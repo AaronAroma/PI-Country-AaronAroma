@@ -1,0 +1,49 @@
+.Landing {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.link h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 12px 50px;
+  font-size: 1.5em;
+  background-color: #303d46;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a2aaaf;
+}
+
+.fondo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imgfondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}

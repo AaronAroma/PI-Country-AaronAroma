@@ -1,0 +1,173 @@
+.componentWrapper {
+  margin-top: 25px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 400px;
+  position: relative;
+  max-width: 430px;
+  background: #212529;
+  padding: 34px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+  margin: 0 auto;
+}
+
+.wrapper h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.wrapper form {
+  margin-top: 30px;
+}
+
+.selectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.wrapper form .selectBox select {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.wrapper form .durationWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.wrapper form .durationWrapper input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  border-radius: 20px;
+  background: #343a40;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Teko", sans-serif;
+  font-size: large;
+  width: 100%;
+}
+
+.wrapper form .selectBox button {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 69px;
+  border: solid 2px;
+  border-color: #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wrapper .selectBox .clearButton:hover {
+  transform: scale(1.05);
+  background: #c52f2f;
+  color: #fff;
+}
+
+.wrapper span {
+  color: #963939;
+}
+
+.countrySelect {
+  width: 25rem;
+  height: 12.5rem;
+  margin-bottom: 10px;
+}
+
+.addedCountries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .addedCountries .delCountryButton {
+  width: 28px;
+  height: 40px;
+  font-family: "Teko", sans-serif;
+  font-size: large;
+  background-color: #963939;
+  color: #c7c7c7;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin: 10px 5px 10px auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.wrapper .addedCountries .delCountryButton:hover {
+  transform: scale(1.05);
+  background: #c44b4b;
+  color: #fff;
+}
+
+.addedCountries label {
+  margin-top: 20px;
+}
+
+.addedCountries ul {
+  justify-content: center;
+  padding: 0;
+}
+
+.addedCountries li {
+  width: 300px;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  background: #6C757D;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.selectBoxButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectBoxButton button {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 69px;
+  border: solid 2px;
+  border-color: #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.selectBoxButton button:hover {
+  transform: scale(1.05);
+  background: rgb(85, 196, 75);
+  color: #fff;
+}

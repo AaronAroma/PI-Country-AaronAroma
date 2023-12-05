@@ -1,0 +1,45 @@
+.fullWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #495057;
+  color: #fff;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.buttonsWrapper button {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 15px;
+  border: solid 2px;
+  border-color: #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonsWrapper button:hover {
+  transform: scale(1.05);
+  background-color: #adb5bd;
+  color: #333;
+}
+
+.logoutButton{
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 15px;
+  border: solid 2px;
+  border-color: #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #d44939;
+}
