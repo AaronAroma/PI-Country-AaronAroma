@@ -10,7 +10,6 @@ import {
   getActivities,
 } from "../../redux/Actions/action";
 
-import SearchBar from "../../components/SearchBar/searchBar.jsx";
 import Cards from "../../components/Cards/Cards.jsx";
 
 import style from "./Home.module.css";
