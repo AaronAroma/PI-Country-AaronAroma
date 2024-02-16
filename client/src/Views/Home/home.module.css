@@ -65,6 +65,10 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.option {
+  color: #fff ;
+}
+
 .searchBarWrapper {
   margin-left: 12.5rem;
   display: flex;

@@ -12,14 +12,15 @@ import {
 import axios from "axios";
 
 
-export const detalle  = async (id) => {
+export const detalle = async (id) => {
     try {
-    const { data } = await axios(`http://localhost:3001/countries/${id}`)
-    return data
+        const { data } = await axios(`http://localhost:3001/countries/${id}`)
+        return data
     } catch (error) {
-        throw new Error ("No hay paises con ese ID")
+        throw new Error("No hay paises con ese ID")
     }
 }
+
 export const getCountries = () => {
     const endpoint = "http://localhost:3001/countries";
     return async (dispatch) => {
@@ -57,7 +58,6 @@ export const getActivities = () => {
     return async (dispatch) => {
         try {
             const { data } = await axios.get(endpoint);
-
             return dispatch({
                 type: GET_ACTIVITIES,
                 payload: data,
@@ -73,6 +73,8 @@ export const addActivity = (activityDetail) => {
     return async (dispatch) => {
         try {
             const { data } = await axios.post(endpoint, activityDetail);
+
+            dispatch(getActivities());
 
             return dispatch({
                 type: CREATE_ACTIVITY,

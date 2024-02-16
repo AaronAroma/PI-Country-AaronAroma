@@ -27,8 +27,6 @@ const Home = () => {
   const [items, setItems] = useState([...allCountries]);
   const [currentPage, setCurrentPage] = useState(0);
 
-  const [persistentPage, setPersistentPage] = useState(0);
-
   // Cuando se monta el componente, se despacha una action solicitando todos los Countries y las Activities.
   useEffect(() => {
     dispatch(getCountries());
@@ -159,7 +157,6 @@ const Home = () => {
           </select>
         </div>
         <button onClick={handleReset}>Clear Filters</button>
-        
       </div>
       <div className={style.cardWrapper}></div>
 

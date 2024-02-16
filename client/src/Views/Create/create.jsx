@@ -101,7 +101,7 @@ const Create = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (input.name === "Activity") {
+    if (!input.name || input.name === "Activity") {
       setError((prevError) => ({
         ...prevError,
         name: "Please select an activity.",
@@ -194,7 +194,7 @@ const Create = () => {
               <label>Duration: </label>
               <input
                 name="duration"
-                value={input.value}
+                value={input.duration}
                 onChange={handleChange}
                 type="time"
               />
