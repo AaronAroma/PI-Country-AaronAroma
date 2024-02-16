@@ -3,7 +3,16 @@ const { Activity, Country } = require("../db");
 
 const activitiesList = async () => {
     try {
-        const allActivities = Activity.findAll()
+        const allActivities = await Activity.findAll({
+            include: [{
+                model: Country,
+                as: "Countries",
+                attributes: ["name", "id"],
+                through: {
+                    attributes: []
+                }
+            }],
+        })
         return allActivities;
     } catch (error) {
         throw new Error({ error: error.message })
@@ -13,18 +22,21 @@ const activitiesList = async () => {
 
 const postActivityDB = async (name, dificulty, duration, season, countries) => {
     try {
-        const newActivity = await Activity.create({
-            name,
-            season,
-            dificulty,
-            duration,
-        });
+        const newActivity = await Activity.create({ name, dificulty, duration, season });
+
         if (countries && countries.length > 0) {
-            await Activity.setCountries(countries);
+            const associatedCountries = await Country.findAll({
+                where: {
+                    name: countries,
+                }
+            });
+
+            await newActivity.addCountries(associatedCountries);
         }
+
         return newActivity
     } catch (error) {
-        throw new Error({ error: error.message })
+        throw new Error(error.message)
     }
 }
 

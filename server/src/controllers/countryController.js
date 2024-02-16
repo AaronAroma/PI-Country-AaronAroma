@@ -7,7 +7,6 @@ const getCountriesBD = async (name) => {
             where: {
                 name: { [Op.iLike]: `%${name}%` },
             },
-
             include: Activity,
         });
         return countryName;
